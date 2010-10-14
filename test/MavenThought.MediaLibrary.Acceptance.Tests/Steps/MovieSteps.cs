@@ -10,12 +10,17 @@ namespace MavenThought.MediaLibrary.Acceptance.Tests.Steps
     [Binding]
     public class MovieSteps
     {
+        /// <summary>
+        /// Movie page object
+        /// </summary>
+        private readonly AddMoviePage _page;
 
         /// <summary>
         /// Initialize an instance
         /// </summary>
         public MovieSteps()
         {
+            this._page = new AddMoviePage();
         }
 
         /// <summary>
