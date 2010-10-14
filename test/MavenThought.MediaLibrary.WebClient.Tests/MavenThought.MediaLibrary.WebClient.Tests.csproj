@@ -96,6 +96,9 @@
     <Compile Include="Controllers\When_movies_controller_creates_the_form_to_add_a_movie.cs">
       <DependentUpon>MoviesControllerSpecification.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\When_movies_controller_creates_a_movie.cs">
+      <DependentUpon>MoviesControllerSpecification.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
