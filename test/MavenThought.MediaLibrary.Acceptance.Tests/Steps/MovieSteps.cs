@@ -32,5 +32,11 @@ namespace MavenThought.MediaLibrary.Acceptance.Tests.Steps
         {
             this._page.Title = title;
         }
+
+        [When(@"I click ""Submit""")]
+        public void ClickSubmit()
+        {
+            this._page.Submit();
+        }
     }
 }
