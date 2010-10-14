@@ -9,7 +9,14 @@ namespace MavenThought.MediaLibrary.WebClient.Tests.Controllers
     [Specification]
     public class When_movies_controller_creates_the_form_to_add_a_movie : MoviesControllerSpecification
     {
-
+        /// <summary>
+        /// Checks the view with the form is returned
+        /// </summary>
+        [It]
+        public void Should_return_the_create_view()
+        {
+            this.ActualResult.AssertViewRendered();
+        }
 
         /// <summary>
         /// Call create method
