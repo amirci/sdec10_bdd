@@ -39,7 +39,7 @@ namespace MavenThought.MediaLibrary.WebClient.Controllers
         /// <returns>The view with the form</returns>
         public ActionResult Create()
         {
-            return null;
+            return View();
         }
     }
 }
