@@ -41,5 +41,15 @@ namespace MavenThought.MediaLibrary.WebClient.Controllers
         {
             return View();
         }
+
+        /// <summary>
+        /// Submits the form to create a moive POST: /Movies/Create
+        /// </summary>
+        /// <param name="title">Title to use</param>
+        /// <returns></returns>
+        public ActionResult Create(string title)
+        {
+            return View();
+        }
     }
 }
