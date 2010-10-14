@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Web.Mvc;
+using MavenThought.MediaLibrary.Core;
 using MavenThought.MediaLibrary.Domain;
 
 namespace MavenThought.MediaLibrary.WebClient.Controllers
@@ -49,6 +50,8 @@ namespace MavenThought.MediaLibrary.WebClient.Controllers
         /// <returns></returns>
         public ActionResult Create(string title)
         {
+            this._library.Add(new Movie { Title = title });
+
             return Redirect("Index");
         }
     }
