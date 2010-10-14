@@ -151,6 +151,9 @@
     <Content Include="Content\Images\media_frenzy_logo.gif" />
     <Content Include="Content\Images\media_imgs.gif" />
     <None Include="Content\Site.less" />
+    <None Include="Views\Movies\Create.haml">
+      <SubType>ASPXCodeBehind</SubType>
+    </None>
     <None Include="Views\Movies\Index.haml">
       <SubType>ASPXCodeBehind</SubType>
     </None>
