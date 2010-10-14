@@ -16,5 +16,13 @@ namespace MavenThought.MediaLibrary.Acceptance.Tests.PageObjects
 
             set { Browser.Instance.TextField("title").Value = value ; }
         }
+
+        /// <summary>
+        /// Click the submit button to send the form
+        /// </summary>
+        public void Submit()
+        {
+            Browser.Instance.Button("Submit").Click();
+        }
     }
 }
