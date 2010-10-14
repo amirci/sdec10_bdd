@@ -48,6 +48,7 @@ namespace MavenThought.MediaLibrary.WebClient.Controllers
         /// </summary>
         /// <param name="title">Title to use</param>
         /// <returns></returns>
+        [AcceptVerbs(HttpVerbs.Post)]
         public ActionResult Create(string title)
         {
             this._library.Add(new Movie { Title = title });
