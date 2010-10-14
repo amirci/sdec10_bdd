@@ -49,7 +49,7 @@ namespace MavenThought.MediaLibrary.WebClient.Controllers
         /// <returns></returns>
         public ActionResult Create(string title)
         {
-            return View();
+            return Redirect("Index");
         }
     }
 }

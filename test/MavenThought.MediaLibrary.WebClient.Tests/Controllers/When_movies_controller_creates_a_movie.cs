@@ -17,7 +17,7 @@ namespace MavenThought.MediaLibrary.WebClient.Tests.Controllers
         [It]
         public void Should_redirect_to_index_page()
         {
-            this.ActualResult.AssertHttpRedirect().ToUrl("/Index");
+            this.ActualResult.AssertHttpRedirect().ToUrl("Index");
         }
 
         /// <summary>
