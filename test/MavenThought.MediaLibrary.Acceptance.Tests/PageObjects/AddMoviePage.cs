@@ -7,5 +7,14 @@ namespace MavenThought.MediaLibrary.Acceptance.Tests.PageObjects
     /// </summary>
     public class AddMoviePage
     {
+        /// <summary>
+        /// Gets or sets the title on the page
+        /// </summary>
+        public string Title
+        {
+            get { return Browser.Instance.TextField("title").Value; }
+
+            set { Browser.Instance.TextField("title").Value = value ; }
+        }
     }
 }
