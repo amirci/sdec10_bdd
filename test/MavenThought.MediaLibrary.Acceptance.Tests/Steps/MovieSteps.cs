@@ -18,5 +18,14 @@ namespace MavenThought.MediaLibrary.Acceptance.Tests.Steps
         {
         }
 
+        /// <summary>
+        /// Enter a title into the movie
+        /// </summary>
+        /// <param name="title">Title of the movie</param>
+        [When(@"I enter ""(.*)"" in the title")]
+        public void EnterMovieTitle(string title)
+        {
+            this._page.Title = title;
+        }
     }
 }
